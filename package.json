@@ -8,7 +8,8 @@
 		"start": "next start",
 		"lint": "next lint",
 		"prepare": "husky",
-		"biome:check": "biome check --write --unsafe --config-path=biome.json"
+		"biome:check": "biome check --write --unsafe --config-path=biome.json",
+		"populate-db": "tsx scripts/populate-db.ts"
 	},
 	"dependencies": {
 		"@clerk/nextjs": "^6.21.0",
@@ -21,6 +22,7 @@
 		"class-variance-authority": "^0.7.1",
 		"clsx": "^2.1.1",
 		"drizzle-orm": "^0.44.2",
+		"drizzle-zod": "^0.8.3",
 		"lucide-react": "^0.514.0",
 		"nanoid": "^5.1.5",
 		"next": "15.3.3",
@@ -43,6 +45,7 @@
 		"drizzle-kit": "^0.31.1",
 		"husky": "^9.1.7",
 		"tailwindcss": "^4",
+		"tsx": "^4.19.2",
 		"tw-animate-css": "^1.3.4",
 		"typescript": "^5"
 	}

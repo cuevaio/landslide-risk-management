@@ -1,13 +1,11 @@
 import { pgTable, text, timestamp, varchar } from "drizzle-orm/pg-core";
 import { user } from "./user";
 
-export const file = pgTable("file", {
+export const zone = pgTable("zone", {
 	id: varchar("id", { length: 12 }).primaryKey(),
 
-	userId: text("user_id").notNull(),
-
-	name: text("name").notNull(),
-	url: text("url").notNull(),
+	name: text("name"),
+	department: text("department"),
 
 	createdAt: timestamp("created_at").notNull().defaultNow(),
 	updatedAt: timestamp("updated_at").notNull().defaultNow(),
